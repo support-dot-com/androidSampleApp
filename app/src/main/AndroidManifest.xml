@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.preethp.sampleapp">
+
+    <application
+        android:name=".SampleAppActivity"
+        tools:replace="android:theme, icon"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".splashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".selfHelpActivity"></activity>
+        <activity android:name=".ContextLog"
+            android:screenOrientation="portrait"
+            android:label="Enter Your Details">
+        </activity>
+
+        <activity android:name=".MainActivity"></activity>
+
+        <activity android:name=".custom_data_layout"
+            android:label="Custom defined data">
+        </activity>
+
+        <activity android:name=".log_data_layout"
+            android:screenOrientation="portrait"
+            android:label="Log Device and Application Data">
+        </activity>
+    </application>
+
+</manifest>
