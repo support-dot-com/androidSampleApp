@@ -1,20 +1,16 @@
-package com.example.preethp.sampleapp;
+package com.sprt.sampleapp;
 
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.sprt.android.esnuilib.initialize.NexusConnectSDK;
-import com.sprt.android.esnuilib.utility.Util;
-
-import org.w3c.dom.Text;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -22,7 +18,7 @@ import java.util.Map;
 /**
  * Created by preethp on 9/26/2016.
  */
-public class log_data_layout extends AppCompatActivity {
+public class DataLoggerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,7 +57,7 @@ public class log_data_layout extends AppCompatActivity {
         logButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(log_data_layout.this, custom_data_layout.class);
+                Intent intent = new Intent(DataLoggerActivity.this, CustomDataLoggerActivity.class);
                 startActivity(intent);
             }
         });

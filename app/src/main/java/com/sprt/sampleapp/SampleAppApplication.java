@@ -1,4 +1,4 @@
-package com.example.preethp.sampleapp;
+package com.sprt.sampleapp;
 
 import com.sprt.android.esnuilib.SprtApplication;
 import com.sprt.android.esnuilib.initialize.NexusConnectSDK;
@@ -6,7 +6,7 @@ import com.sprt.android.esnuilib.initialize.NexusConnectSDK;
 /**
  * Created by preethp on 9/18/2016.
  */
-public class SampleAppActivity extends SprtApplication {
+public class SampleAppApplication extends SprtApplication {
 
     @Override
     public void onCreate() {

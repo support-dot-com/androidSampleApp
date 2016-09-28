@@ -1,7 +1,5 @@
-package com.example.preethp.sampleapp;
+package com.sprt.sampleapp;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -15,7 +13,7 @@ import com.sprt.android.esnuilib.initialize.NexusConnectSDK;
 /**
  * Created by preethp on 9/26/2016.
  */
-public class ContextLog extends AppCompatActivity {
+public class ContextLoggerActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

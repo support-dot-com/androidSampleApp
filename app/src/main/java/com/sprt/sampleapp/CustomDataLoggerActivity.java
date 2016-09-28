@@ -1,10 +1,9 @@
-package com.example.preethp.sampleapp;
+package com.sprt.sampleapp;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -15,7 +14,7 @@ import com.sprt.android.esnuilib.initialize.NexusConnectSDK;
 /**
  * Created by preethp on 9/26/2016.
  */
-public class custom_data_layout extends AppCompatActivity {
+public class CustomDataLoggerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,14 +42,14 @@ public class custom_data_layout extends AppCompatActivity {
                 NexusConnectSDK.setData(customDataKey, customDataValue);
                 NexusConnectSDK.setData(customDataKey1, customDataValue1);
 
-                AlertDialog dialog = new AlertDialog.Builder(custom_data_layout.this).create();
+                AlertDialog dialog = new AlertDialog.Builder(CustomDataLoggerActivity.this).create();
                 dialog.setTitle("Your data has been succesffuly logged");
                 dialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 dialog.dismiss();
 
-                                Intent intent = new Intent(custom_data_layout.this, MainActivity.class);
+                                Intent intent = new Intent(CustomDataLoggerActivity.this, MainActivity.class);
                                 startActivity(intent);
                             }
                         });
