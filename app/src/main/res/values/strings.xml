@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Support.com Sample APP</string>
+    <string name="app_name">Support.com Sample App</string>
     <string name="skill">Sales</string>
     <string name="help_number">+91-9742423476</string>
     <string name="PREFS_FILENAME">sample_app_prefs</string>
