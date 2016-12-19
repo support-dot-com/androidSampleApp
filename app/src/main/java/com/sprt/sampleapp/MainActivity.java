@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.change_jwt) {
-            Helper.addJWTToken(getApplicationContext());
+            Helper.addJWTToken(MainActivity.this);
             return true;
         }
         return super.onOptionsItemSelected(item);

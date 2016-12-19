@@ -7,9 +7,10 @@ android {
     defaultConfig {
         applicationId "com.sprt.sampleapp"
         minSdkVersion 16
-        targetSdkVersion 23
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -31,6 +32,8 @@ dependencies {
     compile(name: 'sprtBaseLibrary', ext: 'aar')
     compile(name: 'sprtRemoteBaseLibrary', ext: 'aar')
     compile(name: 'sprtRemoteInterface', ext: 'aar')
+    compile(name:'sprtSeeSupportLibrary', ext:'aar')
+    compile 'com.opentok.android:opentok-android-sdk:2.9.+'
     compile 'com.android.support:design:23.1.1'
     compile 'com.android.support:appcompat-v7:23.0.0'
 }
