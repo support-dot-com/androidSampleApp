@@ -33,7 +33,7 @@ dependencies {
     compile(name: 'sprtRemoteBaseLibrary', ext: 'aar')
     compile(name: 'sprtRemoteInterface', ext: 'aar')
     compile(name:'sprtSeeSupportLibrary', ext:'aar')
-    compile 'com.opentok.android:opentok-android-sdk:2.9.+'
+    compile 'com.opentok.android:opentok-android-sdk:2.8.+'
     compile 'com.android.support:design:23.1.1'
     compile 'com.android.support:appcompat-v7:23.0.0'
 }
